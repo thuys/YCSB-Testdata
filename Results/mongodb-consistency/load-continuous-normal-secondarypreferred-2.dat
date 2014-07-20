@@ -1,0 +1,90 @@
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P /root/ycsb/config/mongodb-consistency.conf -P /root/ycsb/config/workload-ycsb-thomas-consistency -P /root/ycsb/config/workload-ycsb-thomas-load -s -load
+ 0 sec: 0 operations; 
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+new database url = 172.16.32.45:27018/ycsb-consistency
+MongoDB type: Read: primary, Write: safe
+ 10 sec: 24434 operations; 2435.61 current ops/sec; [INSERT AverageLatency(us)=5159.25] 
+ 12 sec: 30000 operations; 2519.69 current ops/sec;   
+[OVERALL], RunTime(ms), 12241.0
+[OVERALL], Throughput(ops/sec), 2450.7801650191977
+[INSERT], Operations, 30000
+[INSERT], AverageLatency(us), 11258.0109
+[INSERT], MinLatency(us), 256
+[INSERT], MaxLatency(us), 505671
+[INSERT], Return=0, 29996
+[INSERT], 0, 53058.373546511626
+[INSERT], 1000, 14712.17022384175
+[INSERT], 2000, 7846.48282208589
+[INSERT], 3000, 6602.818377088305
+[INSERT], 4000, 8661.41415618602
+[INSERT], 5000, 9783.497150519612
+[INSERT], 6000, 14031.047915668423
+[INSERT], 7000, 10705.766935766937
+[INSERT], 8000, 10871.466585662212
+[INSERT], 9000, 14651.578243423986
+[INSERT], 10000, 12229.971622701838
+[INSERT], 11000, 7806.436285097192
+[CLEANUP], Operations, 30
+[CLEANUP], AverageLatency(us), 3856.8333333333335
+[CLEANUP], MinLatency(us), 916
+[CLEANUP], MaxLatency(us), 19878
+[CLEANUP], 0, 3856.8333333333335
+java -cp /root/ycsb/YCSB/mongodb/target/mongodb-binding-0.1.4.jar:/root/ycsb/YCSB/mongodb/target/archive-tmp/mongodb-binding-0.1.4.jar:/root/ycsb/YCSB/hbase/src/main/conf:/root/ycsb/YCSB/nosqldb/src/main/conf:/root/ycsb/YCSB/jdbc/src/main/conf:/root/ycsb/YCSB/jdbc/src/main/conf/postgresql-9.3-1100.jdbc41.jar:/root/ycsb/YCSB/infinispan/src/main/conf:/root/ycsb/YCSB/dynamodb/conf:/root/ycsb/YCSB/core/target/core-0.1.4.jar:/root/ycsb/YCSB/gemfire/src/main/conf:/root/ycsb/YCSB/voldemort/src/main/conf com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P /root/ycsb/config/mongodb-consistency.conf -P /root/ycsb/config/workload-ycsb-thomas-consistency -P /root/ycsb/config/workload-ycsb-thomas-load -s -load

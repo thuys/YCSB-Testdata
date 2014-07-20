@@ -1,0 +1,34 @@
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.HBaseClient -P /root/ycsb/config/hbase.conf -P /root/ycsb/config/workload-ycsb-thomas-consistency -P /root/ycsb/config/workload-ycsb-thomas-load -s -load
+ 0 sec: 0 operations; 
+ 10 sec: 16872 operations; 1687.03 current ops/sec;  
+ 16 sec: 30000 operations; 2053.17 current ops/sec;   
+[OVERALL], RunTime(ms), 16394.0
+[OVERALL], Throughput(ops/sec), 1829.937782115408
+[INSERT], Operations, 30000
+[INSERT], AverageLatency(us), 16230.9549
+[INSERT], MinLatency(us), 3606
+[INSERT], MaxLatency(us), 1321666
+[INSERT], Return=0, 30000
+[INSERT], 0, 51572.1429758936
+[INSERT], 1000, 16847.41011235955
+[INSERT], 2000, 16136.922413793103
+[INSERT], 3000, 15405.16649484536
+[INSERT], 4000, 19465.851202079273
+[INSERT], 5000, 16396.319802523314
+[INSERT], 6000, 14828.912098765431
+[INSERT], 7000, 11990.773018414731
+[INSERT], 8000, 12479.765957446809
+[INSERT], 9000, 15728.115949632738
+[INSERT], 10000, 13129.2487890797
+[INSERT], 11000, 15408.00921187308
+[INSERT], 12000, 15230.604462474645
+[INSERT], 13000, 12680.349535080304
+[INSERT], 14000, 14306.565404887398
+[INSERT], 15000, 14420.524804177545
+[CLEANUP], Operations, 30
+[CLEANUP], AverageLatency(us), 11.466666666666667
+[CLEANUP], MinLatency(us), 4
+[CLEANUP], MaxLatency(us), 68
+[CLEANUP], 0, 11.466666666666667
+java -cp /root/ycsb/YCSB/hbase/src/main/conf:/root/ycsb/YCSB/hbase/target/hbase-binding-0.1.4.jar:/root/ycsb/YCSB/hbase/target/archive-tmp/hbase-binding-0.1.4.jar:/root/ycsb/YCSB/nosqldb/src/main/conf:/root/ycsb/YCSB/jdbc/src/main/conf:/root/ycsb/YCSB/jdbc/src/main/conf/postgresql-9.3-1100.jdbc41.jar:/root/ycsb/YCSB/infinispan/src/main/conf:/root/ycsb/YCSB/dynamodb/conf:/root/ycsb/YCSB/core/target/core-0.1.4.jar:/root/ycsb/YCSB/gemfire/src/main/conf:/root/ycsb/YCSB/voldemort/src/main/conf com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.HBaseClient -P /root/ycsb/config/hbase.conf -P /root/ycsb/config/workload-ycsb-thomas-consistency -P /root/ycsb/config/workload-ycsb-thomas-load -s -load

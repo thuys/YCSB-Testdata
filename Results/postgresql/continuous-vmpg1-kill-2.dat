@@ -1,0 +1,64 @@
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.JdbcDBClient -P /root/ycsb/config/postgresql.conf -P /root/ycsb/config/workload-ycsb-thomas -P /root/ycsb/config/workload-ycsb-thomas-continuous -s -threads 30 -target 100 -p eventFile=/root/ycsb/config/postgresql/postgresql-event-vmpg1-kill.xml -t
+ 0 sec: 0 operations; 
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb-x
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+Using 1 shards
+ 10 sec: 958 operations; 95.55 current ops/sec;     

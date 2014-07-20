@@ -1,0 +1,770 @@
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.JdbcDBClient -P /root/ycsb/config/postgresql.conf -P /root/ycsb/config/workload-ycsb-thomas -P /root/ycsb/config/workload-ycsb-thomas-continuous -s -threads 30 -target 100 -p eventFile=/root/ycsb/config/postgresql/postgresql-event-vmpg2-drop.xml -t
+ 0 sec: 0 operations; 
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+Adding shard node URL: jdbc:postgresql://vmpg3:5432/ycsb
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:143)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:112)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:71)
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:269)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:143)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:112)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:71)
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:269)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:143)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:112)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:71)
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:269)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:143)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:112)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:71)
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:269)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:143)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:112)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:71)
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:269)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:143)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:112)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:71)
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:269)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:143)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:112)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:71)
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:269)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:143)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:112)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:71)
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:269)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+com.yahoo.ycsb.DBException: org.postgresql.util.PSQLException: The connection attempt failed.
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:264)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:63)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:200)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:225)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:64)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:136)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:31)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:410)
+	at org.postgresql.Driver.connect(Driver.java:280)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.yahoo.ycsb.db.JdbcDBClient.init(JdbcDBClient.java:244)
+	... 2 more
+Caused by: java.io.EOFException
+	at org.postgresql.core.PGStream.ReceiveChar(PGStream.java:271)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:376)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:173)
+	... 13 more
+ 10 sec: 0 operations; 
+[OVERALL], RunTime(ms), 600684.0
+[OVERALL], Throughput(ops/sec), 0.0
+[EVENT], ID, Start in ms, Delay in micro seconds, Has been started, Has finished execution, exit code
+[EVENT], Down, 300000, 163631, true, true, 0
+[EVENT], Up, 600000, 400426, true, true, 12
+java -cp /root/ycsb/YCSB/hbase/src/main/conf:/root/ycsb/YCSB/nosqldb/src/main/conf:/root/ycsb/YCSB/jdbc/src/main/conf:/root/ycsb/YCSB/jdbc/src/main/conf/postgresql-9.3-1100.jdbc41.jar:/root/ycsb/YCSB/jdbc/target/jdbc-binding-0.1.4.jar:/root/ycsb/YCSB/jdbc/target/archive-tmp/jdbc-binding-0.1.4.jar:/root/ycsb/YCSB/infinispan/src/main/conf:/root/ycsb/YCSB/dynamodb/conf:/root/ycsb/YCSB/core/target/core-0.1.4.jar:/root/ycsb/YCSB/gemfire/src/main/conf:/root/ycsb/YCSB/voldemort/src/main/conf com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.JdbcDBClient -P /root/ycsb/config/postgresql.conf -P /root/ycsb/config/workload-ycsb-thomas -P /root/ycsb/config/workload-ycsb-thomas-continuous -s -threads 30 -target 100 -p eventFile=/root/ycsb/config/postgresql/postgresql-event-vmpg2-drop.xml -t
